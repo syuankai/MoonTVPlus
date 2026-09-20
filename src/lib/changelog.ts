@@ -11,7 +11,28 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
-    version: "250.0.1",
+    version: "225.1.0",
+    date: "2026-09-07",
+    added: [
+    "新增本地设置云同步",
+    "openlist增加代理功能",
+    "增加缩略图禁用开关",
+    "新增支持环境变量指定运行UID/GID",
+    "新增 detectOpenListMediaType 函数来识别播放链接的媒体类型",
+    "新增网盘挂载源原生HLS播放支持",
+    "新增音乐播放记录拖动功能",
+    "源站寻片增加置顶与返回快照"
+    ],
+    changed: [
+    "移除百度图片代理",
+    "移动时刻表进入视图"
+    ],
+    fixed: [
+    "修复缩略图更换集数后不变更"
+    ]
+  },
+  {
+    version: "225.0.1",
     date: "2026-08-21",
     added: [
       // 无新增内容
@@ -37,10 +58,10 @@ export const changelog: ChangelogEntry[] = [
     ],
     changed: [
     "搜索前高级显示显示方式，无权限时不显示只搜私人影库",
-    "修复私人影库的parse-torrent-name错误匹配名字",
     "默认弹幕上限设置为5000"
     ],
     fixed: [
+    "修复私人影库的parse-torrent-name错误匹配名字",
     "修复videocard标题popup层级比来源数量角标低",
     "修复网盘源PC右键无法显示原名",
     "修复首页综艺查看更多跳转错误"
